@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Header from './Header';
+import Footer from './Footer';
+import LoginPage from'./LoginPage';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+         <Header />
+        <LoginPage/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -19,7 +24,9 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Footer/>
         </header>
+      
       </div>
     );
   }
